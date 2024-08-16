@@ -140,4 +140,34 @@ a {
 }
 
 
+.download-cv-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-cv {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3498db; 
+    color: #ffffff; 
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.download-cv:hover {
+    background-color: #2980b9; 
+    transform: translateY(-2px); 
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.download-cv:active {
+    background-color: #1f639a;
+    transform: translateY(0);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
 
