@@ -179,33 +179,24 @@ h1 {
     white-space: normal;
 }
 
-.h1-subtitle {
-    font-size: 3vw;
+h1 {
+    font-size: 5vw; /* Tamanho de fonte responsivo */
+    line-height: 1.2; /* Altura da linha ajustada */
+    text-align: center; /* Centraliza o texto */
+    word-wrap: break-word; /* Quebra de linha automática */
+    white-space: normal; /* Permite quebras de linha */
+    margin: 20px auto; /* Ajusta as margens */
+    max-width: 90%; /* Limita a largura máxima para evitar que o texto se espalhe */
 }
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 28px;
-    }
-
-    .h1-subtitle {
-        font-size: 20px;
+        font-size: 28px; /* Reduz o tamanho da fonte para tablets */
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 24px;
-    }
-
-    .h1-subtitle {
-        font-size: 18px;
+        font-size: 24px; /* Reduz ainda mais o tamanho da fonte para celulares */
     }
 }
-
-h1 {
-    font-size: 5vw; /* Tamanho da fonte que se adapta à largura da viewport */
-    line-height: 1.2;
-    text-align: center;
-}
-
