@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ECF0F1;
+    color: #34495E;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #2C3E50;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
@@ -103,31 +103,38 @@ h2 {
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #2C3E50;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
     bottom: 0;
     width: 100%;
 }
 
+h2, h3 {
+    color: #2C3E50;
+}
+
+a {
+    color: #3498DB
+}
 
 
 .certificates-list {
     display: flex;
-    flex-wrap: wrap;  /* Permite que os itens "quebrem" para a próxima linha se necessário */
-    gap: 20px;        /* Espaçamento entre os itens */
-    justify-content: flex-start;  /* Alinha os itens à esquerda */
-    align-items: flex-start;      /* Garante que os itens estejam alinhados ao topo */
+    flex-wrap: wrap; 
+    gap: 20px;     
+    justify-content: flex-start;  
+    align-items: flex-start;  
 }
 
 .certificate-item {
-    text-align: center;  /* Centraliza o texto dentro de cada item */
-    flex: 0 1 auto;      /* Garante que os itens não se expandam mais do que o necessário */
+    text-align: center; 
+    flex: 0 1 auto;     
 }
 
 .certificate-item img {
-    width: 100px;  /* Define o tamanho do ícone do PDF */
+    width: 100px;  
     height: 100px;
     margin-bottom: 10px;
 }
