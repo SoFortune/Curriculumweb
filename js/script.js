@@ -1,2 +1,7 @@
-// Adicione seu código JavaScript personalizado aqui
-// Este arquivo está vazio por enquanto, mas pode ser usado para adicionar interatividade ao site.
+document.getElementById('themeSwitch').addEventListener('change', function() {
+  if (this.checked) {
+    document.body.classList.add('dark-theme');
+  } else {
+    document.body.classList.remove('dark-theme');
+  }
+});
