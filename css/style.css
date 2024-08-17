@@ -198,3 +198,51 @@ h1 {
 
 
 
+/* Estilização do menu de navegação */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #34495E; /* Cor de fundo do navbar */
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #34495E; /* Cor de fundo dos botões */
+    border-radius: 100px; /* Arredondar os cantos dos botões */
+    border: -150px solid transparent; /* Redução da espessura da borda */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: white; /* Cor de fundo ao passar o mouse */
+    border-color: #ffffff; /* Cor da borda ao passar o mouse */
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+
+/* Para compensar o espaço do menu fixo ao rolar a página */
+body {
+    padding-top: 70px;
+}
+
+section {
+    padding-top: 80px; /* Espaço extra equivalente à altura do menu */
+    margin-top: -80px; /* Compensa o espaçamento para manter o layout */
+}
