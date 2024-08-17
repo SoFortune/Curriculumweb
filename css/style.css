@@ -122,62 +122,23 @@ a {
 
 .certificates-list {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 20px;     
-    justify-content: flex-start;  
-    align-items: flex-start;  
+    flex-wrap: wrap;  /* Permite que os itens "quebrem" para a próxima linha se necessário */
+    gap: 20px;        /* Espaçamento entre os itens */
+    justify-content: flex-start;  /* Alinha os itens à esquerda */
+    align-items: flex-start;      /* Garante que os itens estejam alinhados ao topo */
 }
 
 .certificate-item {
-    text-align: center; 
-    flex: 0 1 auto;     
+    text-align: center;  /* Centraliza o texto dentro de cada item */
+    flex: 0 1 auto;      /* Garante que os itens não se expandam mais do que o necessário */
 }
 
 .certificate-item img {
-    width: 100px;  
+    width: 100px;  /* Define o tamanho do ícone do PDF */
     height: 100px;
     margin-bottom: 10px;
 }
 
-
-.download-cv-container {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.download-cv {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #3498db; 
-    color: #ffffff; 
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 25px; 
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
-}
-
-.download-cv:hover {
-    background-color: #2980b9; 
-    transform: translateY(-2px); 
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); 
-}
-
-.download-cv:active {
-    background-color: #1f639a;
-    transform: translateY(0);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
-}
-
-h1 {
-    font-size: 5vw;
-    line-height: 1.2;
-    text-align: center;
-    word-wrap: break-word;
-    white-space: normal;
-}
 
 h1 {
     font-size: 5vw; /* Tamanho de fonte responsivo */
@@ -200,3 +161,40 @@ h1 {
         font-size: 24px; /* Reduz ainda mais o tamanho da fonte para celulares */
     }
 }
+
+
+
+.download-cv-container {
+    margin-top: 20px;
+    text-align: center; /* Centraliza o botão */
+}
+
+.download-cv {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3498db; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Texto em maiúsculas */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.download-cv:hover {
+    background-color: #2980b9; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Elevação ao passar o mouse */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+}
+
+.download-cv:active {
+    background-color: #1f639a; /* Cor de fundo ao clicar */
+    transform: translateY(0); /* Remove a elevação ao clicar */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Volta à sombra original */
+}
+
+
+
+
